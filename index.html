@@ -3,99 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Mobile App</title>
-    <style>
-        body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          background: #f4f4f9;
-          color: #333;
-        }
-        header {
-          background: #6200ea;
-          color: white;
-          padding: 20px 10px;
-          text-align: center;
-        }
-        .hero {
-          text-align: center;
-          padding: 50px 20px;
-        }
-        .hero h1 {
-          font-size: 2.5rem;
-          margin-bottom: 10px;
-        }
-        .hero p {
-          font-size: 1.2rem;
-          margin-bottom: 20px;
-        }
-        .hero img {
-          width: 80%;
-          max-width: 300px;
-          margin-bottom: 20px;
-        }
-        .cta {
-          margin: 20px auto;
-          padding: 10px 20px;
-          background: #6200ea;
-          color: white;
-          text-decoration: none;
-          border-radius: 5px;
-          display: inline-block;
-          font-size: 1.1rem;
-        }
-        .features {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          padding: 20px;
-          gap: 20px;
-        }
-        .feature {
-          background: white;
-          padding: 20px;
-          border-radius: 10px;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-          width: 300px;
-          text-align: center;
-        }
-        footer {
-          background: #333;
-          color: white;
-          text-align: center;
-          padding: 10px;
-        }
-    </style>
+    <title>My Productivity App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1>My App</h1>
-    <p>Simple. Elegant. Powerful.</p>
+<!-- Top Bar -->
+<header class="top-bar">
+    <div class="container">
+        <div class="logo">
+            <img src="images/retention_logo.svg" alt="Retention App Logo">
+        </div>
+    </div>
 </header>
-<div class="hero">
-    <h1>Welcome to My App</h1>
-    <p>The best way to manage your tasks on the go.</p>
-    <img src="placeholder.png" alt="App Screenshot">
-    <a href="#" class="cta">Download Now</a>
-</div>
-<div class="features">
-    <div class="feature">
-        <h2>Feature 1</h2>
-        <p>Organize your tasks with ease.</p>
+
+<!-- Main Section -->
+<section class="main-section">
+    <div class="container">
+        <div class="left-column">
+            <h1>Alexandros Charantzidis E.E.</h1>
+            <p>Empowering productivity with intuitive design</p>
+        </div>
     </div>
-    <div class="feature">
-        <h2>Feature 2</h2>
-        <p>Sync across all your devices.</p>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <p>&copy; 2025 Alexandros Charantzidis E.E.</p>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/alexandros-charantzidis" target="_blank">
+            <img src="/images/linkedin-logo-blue.png" alt="LinkedIn" class="linkedin-icon">
+        </a>
+        <a href="https://github.com/CharAlex" target="_blank">
+            <img src="/images/github-mark.svg" alt="GitHub" class="github-icon">
+        </a>
     </div>
-    <div class="feature">
-        <h2>Feature 3</h2>
-        <p>Get reminders and notifications.</p>
-    </div>
-</div>
-<footer>
-    <p>© 2025 My App. All rights reserved.</p>
 </footer>
 </body>
 </html>

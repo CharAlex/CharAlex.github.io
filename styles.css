@@ -1,0 +1,92 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDFDFD;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #FDFDFD;
+    padding: 8px 20px;
+}
+
+.top-bar .logo img {
+    height: 40px;
+}
+
+/* Main Section */
+.main-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.main-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.left-column {
+    width: 60%;
+    padding: 0 20px;
+}
+
+.left-column h1 {
+    font-size: 2.5rem;
+    color: #222224;
+}
+
+.left-column p {
+    font-size: 1.1rem;
+    color: #8D8D8D;
+}
+
+/* Footer */
+#footer {
+    background-color: #FDFDFD;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+#footer p {
+    color: #888;
+    font-size: 0.6rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.linkedin-icon, .github-icon {
+    width: 21px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.linkedin-icon:hover, .github-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .left-column {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
