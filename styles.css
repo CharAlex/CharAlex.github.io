@@ -1,4 +1,4 @@
-/* General Styles */
+/* Base styles */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +17,8 @@ body {
 .top-bar {
     background-color: #FDFDFD;
     padding: 8px 20px;
+    display: flex;
+    align-items: center;
 }
 
 .top-bar .logo img {
@@ -28,19 +30,24 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
+    align-items: stretch;
+    padding: 40px 20px;
 }
 
 .main-section .container {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
+/* Left Column */
 .left-column {
-    width: 60%;
-    padding: 0 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
 }
 
 .left-column h1 {
@@ -53,6 +60,31 @@ body {
     color: #8D8D8D;
 }
 
+.left-column .highlight-text {
+    color: #286EDAFF;
+    font-weight: bold;
+}
+
+/* Right Column */
+.right-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: url('images/abstract-background.svg'), #c3dbff;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 20px;
+    align-items: center;
+    min-width: 200px;
+    justify-content: center;
+}
+
+.soon-on-play-store {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
 /* Footer */
 #footer {
     background-color: #FDFDFD;
@@ -60,16 +92,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 #footer p {
     color: #888;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 .social-links {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
@@ -83,10 +117,94 @@ body {
     transform: scale(1.1);
 }
 
-/* Responsiveness */
-@media screen and (max-width: 768px) {
-    .left-column {
-        width: 100%;
-        padding: 10px 0;
+/* Buttons */
+.primary-button {
+    background-color: #286EDAFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.primary-button:hover {
+    background-color: #1f5db5;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main-section .container {
+        flex-wrap: wrap;
     }
+
+    .left-column, .right-column {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-bar .logo img {
+        height: 30px;
+    }
+
+    .left-column h1 {
+        font-size: 1.5rem;
+    }
+
+    .left-column p {
+        font-size: 0.9rem;
+    }
+
+    #footer p {
+        font-size: 0.7rem;
+    }
+}
+
+/* Capsule */
+.capsule {
+    display: inline-block;
+    padding: 6px 18px;
+    text-align: center;
+    line-height: 1.2rem;
+    border-radius: 10px;
+    color: #ffffff;
+    background: #0f131a;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+/* Logo */
+.right-column-logo {
+    height: 200px;
+    border-radius: 20px;
+}
+
+.get-on-play-store {
+    width: 400px;
+    object-fit: contain;
+    display: block;
+}
+
+.mail-button {
+    background-color: #286EDAFF;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 10px; /* Rounded corners */
+    width: fit-content;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.mail-button:hover {
+    background-color: #1f5db5; /* Darker shade on hover */
 }

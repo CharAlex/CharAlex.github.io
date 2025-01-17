@@ -5,31 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexandros Charantzidis E.E. - Mobile Apps</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-<!-- Top Bar -->
+
 <header class="top-bar">
     <div class="container">
-        <div class="logo">
-            <img src="images/retention_logo.svg" alt="Retention App Logo">
-        </div>
     </div>
 </header>
 
-<!-- Main Section -->
 <section class="main-section">
     <div class="container">
         <div class="left-column">
             <h1>Alexandros Charantzidis E.E.</h1>
-            <p>Empowering productivity with intuitive design</p>
+            <p>🚀 Creating <span class="highlight-text">Productivity Apps</span> with Intuitive
+                Design</p>
+            <br>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  const email = "alexandroscharantzidis@gmail.com";
+                  const mailtoLink = "mailto:" + email;
+                  document.getElementById("email-link").setAttribute("href", mailtoLink);
+                });
+            </script>
+
+            <a id="email-link" href="#" class="mail-button">Contact Us</a>
+        </div>
+        <div class="right-column">
+            <div class="logo-container">
+                <img src="images/retention_logo.svg" alt="Retention App Logo" class="right-column-logo">
+            </div>
+            <div class="soon-on-play-store">
+                <div class="capsule">⏳ Soon on Play Store</div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Footer -->
 <footer id="footer">
-    <p>&copy; 2025 Alexandros Charantzidis E.E.</p>
+    <div class="company-details">
+        <p>&copy; 2025 Alexandros Charantzidis E.E.</p>
+        <p>Kalamaria 54655, Thessaloniki 🇬🇷</p>
+    </div>
     <div class="social-links">
         <a href="https://www.linkedin.com/in/alexandros-charantzidis" target="_blank">
             <img src="/images/linkedin-logo-blue.png" alt="LinkedIn" class="linkedin-icon">
